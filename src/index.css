@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+.dark {
+  --svg-g1: #030712;
+  --svg-g2: #111827;
+  --svg-bg: #dbeafe;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 
@@ -7,8 +13,16 @@
   /* Define your custom brand color */
   --color-brand: #0a0a23;
 
-  --font-oswald: "Oswald", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --svg-g1: #939dac;
+  --svg-g2: #b7bec8;
+  --svg-bg: #cce0ff;
+
+
+
+  --font-oswald: "Oswald",
+    sans-serif;
+  --font-montserrat: "Montserrat",
+    sans-serif;
 
 
   /* Enable class-based Dark Mode */

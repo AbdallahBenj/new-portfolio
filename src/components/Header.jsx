@@ -25,6 +25,7 @@ const Header = () => {
     border-b border-blue-100
     bg-linear-to-tr from-gray-200 via-gray-400 to-gray-500
     dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
+    transition-colors duration-500
     shadow-[0_4px_12px_-4px_#dbeafe]"
     >
       <div
@@ -36,8 +37,8 @@ const Header = () => {
           {/* Logo */}
 
           <h1
-            className="text-2xl font-bold text-blue-900 dark:text-amber-300
-          transition-colors duration-200 hover:text-blue-950 dark:hover:text-amber-400"
+            className="text-2xl font-bold text-blue-900 dark:text-amber-200
+          transition-colors duration-200 hover:text-blue-950 dark:hover:text-amber-300"
           >
             <a href="#">Portfolio</a>
           </h1>
@@ -59,7 +60,7 @@ const Header = () => {
                     className="font-medium
                     hover:border-b
                     text-gray-900 hover:text-blue-900
-                    dark:text-gray-200 dark:hover:text-amber-300
+                    dark:text-gray-200 dark:hover:text-blue-300
                   transition-colors duration-200"
                     href={link}
                   >
