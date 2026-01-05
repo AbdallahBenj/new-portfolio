@@ -2,7 +2,7 @@ const BgFrontSection = ({ className }) => {
   return (
     <svg
       className={className}
-      viewBox="0 0 508 285.75"
+      viewBox="0 0 500 320"
       preserveAspectRatio="xMidYMid slice"
       xmlns="http://www.w3.org/2000/svg"
     >
