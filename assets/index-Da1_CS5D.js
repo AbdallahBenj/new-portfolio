@@ -13,7 +13,7 @@ Error generating stack: `+u.message+`
           font-bold text-gray-900 dark:text-gray-200
               transform bg-gray-300 dark:bg-gray-700  
               transition-all duration-500 ease-in-out md:hidden ${p?"translate-x-0 opacity-100":"-translate-x-full opacity-0"} `,children:g.map(y=>R.jsx("li",{className:`flex items-center
-              border-b border-gray-500 h-12 font-medium`,children:R.jsx("a",{className:"block w-full",href:y.link,onClick:()=>O(!1),children:y.name})},y.name))})]})},_m=()=>{const g=[{name:"About",link:"#"},{name:"Work",link:"#"},{name:"Contact",link:"#"}];return R.jsx("header",{className:`header
+              border-b border-gray-500 h-12 font-medium`,children:R.jsx("a",{className:"block w-full",href:y.link,onClick:()=>O(!1),children:y.name})},y.name))})]})},_m=()=>{const g=[{name:"Home",link:"#"},{name:"About",link:"#"},{name:"Skills",link:"#"},{name:"Projects",link:"#"},{name:"Contact",link:"#"}];return R.jsx("header",{className:`header
     fixed top-0 z-10
     flex w-full h-(--header-mobile) md:h-(--header-desktop) px-4
     border-b border-blue-100
@@ -34,27 +34,26 @@ Error generating stack: `+u.message+`
         h-screen md:h-screen
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
       dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
-      transition-colors duration-500`}),R.jsxs("div",{className:`front-section-container p-4 
+      transition-colors duration-500`}),R.jsxs("div",{className:`front-section-container p-6 
         flex flex-col md:flex-row-reverse 
         min-h-screen pt-(--header-mobile)
         md:min-h-screen md:pt-(--header-desktop)
         w-full max-w-4xl m-auto
         transition-colors duration-500`,children:[R.jsx("div",{className:`profile-image md:mr-16
-        h-72 w-72 md:h-96 md:w-96 m-auto
-        border rounded-full text-blue-100
+          size-66 md:h-96 md:w-96 m-auto
+          border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
         dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500`,children:R.jsx(Om,{className:`h-full w-full 
           text-gray-700 dark:text-blue-500 
           transition-colors duration-500`})}),R.jsxs("div",{className:`text-container 
         flex flex-col justify-end mb-5 md:mb-10`,children:[R.jsx("p",{className:`text-xl font-bold font-montserrat 
             text-gray-700 dark:text-gray-300
-            scale-x-73 origin-left`,children:"Hello, My Name is"}),R.jsx("div",{className:`line 
-          border-b-2 w-30 mt-2 mb-12 text-gray-500`}),R.jsx("h2",{className:`font-oswald text-5xl font-bold tracking-wider uppercase
-            first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
-          text-gray-700 dark:text-gray-300`,children:"MY Name"}),R.jsx("h3",{className:`font-montserrat text-2xl 
-          text-gray-600 dark:text-gray-300 mt-2
-          scale-x-94 origin-left`,children:"Front End Developer"}),R.jsx("div",{className:`line
-          border-b w-15 my-4 text-gray-500`})]})]})]}),Dm=()=>R.jsx("div",{className:`second-section
+            scale-x-73 origin-left`,children:"Hello, I'm"}),R.jsx("div",{className:`line 
+          border-b-2 w-16 mt-2 mb-12 text-gray-500`}),R.jsx("h2",{className:`font-oswald text-5xl font-bold tracking-wider
+            first-letter:text-5xl first-letter:text-gray-800 dark:first-letter:text-blue-500
+          text-gray-700 dark:text-gray-300`,children:"MY Name"}),R.jsx("h3",{className:`font-montserrat text-xl 
+          text-gray-600 dark:text-gray-300 mt-2`,children:"Front-End Developer"}),R.jsx("div",{className:`line
+          border-b w-22 my-4 text-gray-500`})]})]})]}),Dm=()=>R.jsx("div",{className:`second-section
           w-full min-h-screen
           bg-linear-to-r from-gray-100 to-gray-300
       dark:from-gray-700 dark:to-gray-900
