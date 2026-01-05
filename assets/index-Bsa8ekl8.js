@@ -40,7 +40,7 @@ Error generating stack: `+u.message+`
         md:min-h-screen md:pt-(--header-desktop)
         w-full max-w-4xl m-auto
         transition-colors duration-500`,children:[R.jsx("div",{className:`profile-image md:mr-16
-          size-66 md:h-96 md:w-96 m-auto
+          size-62 md:h-96 md:w-96 m-auto
           border rounded-full text-blue-100
         shadow-[2px_4px_12px_3px] shadow-gray-600 
         dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500`,children:R.jsx(Om,{className:`h-full w-full 
@@ -50,7 +50,7 @@ Error generating stack: `+u.message+`
             text-gray-700 dark:text-gray-300
             scale-x-73 origin-left`,children:"Hello, I'm"}),R.jsx("div",{className:`line 
           border-b-2 w-16 mt-2 mb-12 text-gray-500`}),R.jsx("h2",{className:`font-oswald text-5xl font-bold tracking-wider
-            first-letter:text-5xl first-letter:text-gray-800 dark:first-letter:text-blue-500
+            first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300`,children:"MY Name"}),R.jsx("h3",{className:`font-montserrat text-xl 
           text-gray-600 dark:text-gray-300 mt-2`,children:"Front-End Developer"}),R.jsx("div",{className:`line
           border-b w-22 my-4 text-gray-500`})]})]})]}),Dm=()=>R.jsx("div",{className:`second-section
