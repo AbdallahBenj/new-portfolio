@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: "Barlow-condensed";
+  src: url("/fonts/Barlow-condensed.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat.woff2") format("woff2");
   font-weight: 100 900;
@@ -37,6 +44,7 @@
 
   --font-oswald: "Oswald", system-ui, sans-serif;
   --font-montserrat: "Montserrat", system-ui, sans-serif;
+  --font-barlow-condensed: "Barlow-condensed", system-ui, sans-serif;
 
 
   /* Enable class-based Dark Mode */

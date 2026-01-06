@@ -49,7 +49,7 @@ const FrontSection = () => {
         flex flex-col justify-end mb-5 md:mb-10"
         >
           <p
-            className="text-xl font-bold font-montserrat 
+            className="text-xl font-bold font-sans
             text-gray-700 dark:text-gray-300
             scale-x-73 origin-left"
           >
@@ -60,7 +60,7 @@ const FrontSection = () => {
           border-b-2 w-16 mt-2 mb-12 text-gray-500"
           ></div>
           <h2
-            className="font-oswald text-5xl font-bold
+            className="font-oswald text-5xl font-bold 
             first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
           text-gray-700 dark:text-gray-300"
           >
