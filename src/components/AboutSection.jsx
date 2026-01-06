@@ -30,7 +30,7 @@ const AboutSection = ({ id }) => {
 
         <p
           className="
-        text-xl text-justify mt-6 
+        text-lg md:text-xl text-justify mt-6 
         text-gray-600 dark:text-gray-300"
         >
           I'm a front-end developer focused on building, clean, accessible, and
@@ -38,14 +38,14 @@ const AboutSection = ({ id }) => {
         </p>
         <p
           className="
-        text-xl text-justify mt-6
+        text-lg md:text-xl text-justify mt-6
         text-gray-600 dark:text-gray-300"
         >
           I work with React and Tailwind CSS to create modern web experiences.
         </p>
         <p
           className="
-        text-xl text-justify mt-6
+        text-lg md:text-xl text-justify mt-6
         text-gray-600 dark:text-gray-300"
         >
           I enjoy turning designs into real, usable products.
