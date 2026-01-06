@@ -2,9 +2,10 @@ import { FaUserCircle } from "react-icons/fa";
 
 import BgFrontSection from "./BgFrontSection.jsx";
 
-const FrontSection = () => {
+const FrontSection = ({ id }) => {
   return (
-    <div
+    <section
+      id={id}
       className="front-section relative
       transition-colors duration-500"
     >
@@ -82,7 +83,7 @@ const FrontSection = () => {
           ></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

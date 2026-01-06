@@ -9,11 +9,11 @@ const Header = () => {
     },
     {
       name: "About",
-      link: "#",
+      link: "#about",
     },
     {
       name: "Skills",
-      link: "#",
+      link: "#skills",
     },
     {
       name: "Projects",
@@ -28,8 +28,9 @@ const Header = () => {
   return (
     <header
       className="header
+      font-oswald
     fixed top-0 z-10
-    flex w-full h-(--header-mobile) md:h-(--header-desktop) px-4
+    flex w-full h-(--header-mobile) md:h-(--header-desktop)
     border-b border-blue-100
     bg-linear-to-tr from-gray-200/40 via-gray-400/30 to-gray-500/40
     dark:from-gray-700/30 dark:via-gray-900/40 dark:to-gray-950/50
@@ -37,7 +38,7 @@ const Header = () => {
     shadow-[0_4px_12px_-4px_#dbeafe]"
     >
       <div
-        className="header-container m-auto
+        className="header-container m-auto px-6
       flex justify-between items-center w-full max-w-4xl"
       >
         {/*Brand Name*/}

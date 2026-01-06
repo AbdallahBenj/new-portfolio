@@ -39,7 +39,9 @@ const MobileNavLink = ({ navLinks }) => {
             <li
               key={page.name}
               className="flex items-center
-              border-b border-gray-500 h-14 font-medium"
+              font-medium h-14
+              text-gray-700 dark:text-gray-200
+              border-b border-gray-500"
             >
               <a
                 className="block w-full"
