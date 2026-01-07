@@ -7,11 +7,11 @@ const FrontSection = ({ id }) => {
     <section
       id={id}
       className="front-section relative
+      min-h-screen min-h-dvh md:min-h-screen grid
       transition-colors duration-500"
     >
       <BgFrontSection
-        className=" absolute w-full -z-10
-      h-screen md:h-screen
+        className="absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
       dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
       transition-colors duration-500"
@@ -22,7 +22,6 @@ const FrontSection = ({ id }) => {
       <div
         className="front-section-container
         flex justify-center
-        min-h-screen md:min-h-screen
         transition-colors duration-500"
       >
         {/*Profile Card*/}
@@ -33,8 +32,7 @@ const FrontSection = ({ id }) => {
           w-full max-w-4xl p-6
           m-2 md:m-6
           mt-[calc(var(--header-mobile)+0.5rem)]
-          md:mt-[calc(var(--header-desktop)+1.5rem)]
-          rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
+          md:mt-[calc(var(--header-desktop)+1.5rem)]"
         >
           {/*Profile Image Section*/}
 
