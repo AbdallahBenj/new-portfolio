@@ -1,6 +1,12 @@
 import { LuSearchCode, LuTabletSmartphone, LuRefreshCcw } from "react-icons/lu";
 
+import { useRef } from "react";
+import useScroll from "../hooks/useScroll";
+
 const AboutSection = ({ id }) => {
+  const refAboutCard = useRef(null);
+  useScroll(refAboutCard);
+
   const aboutContent = [
     {
       id: 1,
@@ -39,7 +45,6 @@ const AboutSection = ({ id }) => {
 
   return (
     <section
-      id={id}
       className="about-section
       flex items-center justify-center
       w-full min-h-screen
@@ -48,12 +53,14 @@ const AboutSection = ({ id }) => {
       transition-colors duration-500"
     >
       <div
+        id={id}
+        ref={refAboutCard}
         className="about-section-card
         grid grid-rows-1 md:grid-cols-3 gap-6
-        w-full max-w-4xl 
-        m-4 md:m-6
-        mt-[calc(var(--header-mobile)+1rem)]
-        md:mt-[calc(var(--header-desktop)+1.5rem)]"
+        w-full max-w-4xl
+        p-4 md:p-6
+        pt-[calc(var(--header-mobile)+1rem)]
+        md:pt-[calc(var(--header-desktop)+1.5rem)]"
       >
         {/* About Card */}
 

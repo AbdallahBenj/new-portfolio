@@ -65,12 +65,12 @@ const FrontSection = ({ id }) => {
             </p>
             <div
               className="line top
-          border-b-2 w-12 mt-2 mb-10 text-gray-500"
+          border-b-2 w-12 mt-2 mb-6 text-gray-500"
             ></div>
 
             <h2
               className="font-oswald text-5xl font-bold
-            first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
+          first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
           text-gray-700 dark:text-gray-300"
             >
               MY Name

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import useScroll from "../hooks/useScroll";
 
 const SkillsSection = ({ id }) => {
   const skillsLevel = [
@@ -21,7 +22,8 @@ const SkillsSection = ({ id }) => {
     { id: 9, name: "Performance", color: "bg-amber-500" },
   ];
   const [isVisible, setVisible] = useState(false);
-  const targetElement = useRef(null);
+  const refSkillsCard = useRef(null);
+  useScroll(refSkillsCard);
 
   useEffect(() => {
     function handleView(entries, observer) {
@@ -33,15 +35,14 @@ const SkillsSection = ({ id }) => {
     }
     const observer = new IntersectionObserver(handleView);
 
-    if (targetElement?.current) observer.observe(targetElement.current);
+    if (refSkillsCard?.current) observer.observe(refSkillsCard.current);
   }, []);
 
   return (
     <section
-      id={id}
       className="skills-section
       flex items-center justify-center
-      w-full min-h-screen
+      w-full h-full min-h-screen
       bg-linear-to-r from-gray-100 to-gray-300
       dark:from-gray-700 dark:to-gray-900
       transition-colors duration-500"
@@ -49,13 +50,14 @@ const SkillsSection = ({ id }) => {
       {/* Skills Section Card */}
 
       <div
+        id={id}
+        ref={refSkillsCard}
         className="skills-section-card
         grid md:grid-cols-3 gap-6
         w-full max-w-4xl 
-        m-4 md:m-6 
-        mt-[calc(var(--header-mobile)+1rem)]
-        md:mt-[calc(var(--header-desktop)+1.5rem)]
-        "
+        p-4 md:p-6 
+        pt-[calc(var(--header-mobile)+1rem)]
+        md:pt-[calc(var(--header-desktop)+1.5rem)]"
       >
         {/* Skills Card */}
         <div
@@ -63,7 +65,6 @@ const SkillsSection = ({ id }) => {
         p-6 rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
         >
           <h2
-            ref={targetElement}
             className="skills-title
         font-oswald font-semibold text-4xl
         text-gray-800 dark:text-blue-50"
@@ -122,7 +123,6 @@ const SkillsSection = ({ id }) => {
         p-6 rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
         >
           <h2
-            ref={targetElement}
             className="tools-title
         font-oswald font-semibold text-4xl
         text-gray-800 dark:text-blue-50"

@@ -71,13 +71,13 @@ const Header = () => {
             {pages.map((page) => {
               const { id, name, link } = page;
               return (
-                <li key={id} className="">
+                <li key={`${id}-${name}`} className="">
                   <a
                     className="font-medium
                     hover:border-b
-                    text-gray-900 hover:text-blue-900
-                    dark:text-gray-300 dark:hover:text-blue-300
-                  transition-colors duration-200"
+                    text-gray-900 hover:text-sky-950
+                    dark:text-gray-300 dark:hover:text-sky-500
+                    transition-colors duration-200"
                     href={link}
                   >
                     {name}
