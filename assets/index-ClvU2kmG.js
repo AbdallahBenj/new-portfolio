@@ -94,7 +94,7 @@ Error generating stack: `+u.message+`
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:[p.jsxs("div",{className:`skills-card md:col-span-2
         p-6 rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100`,children:[p.jsx("h2",{className:`skills-title
         font-oswald font-semibold text-4xl
-        text-gray-800 dark:text-blue-50`,children:"Skills"}),p.jsx("div",{className:`line-top
+        text-sky-900 dark:text-blue-50`,children:"Skills"}),p.jsx("div",{className:`line-top
           border-b w-26 mt-4 mb-4 md:mb-12 
           text-gray-500`}),p.jsx("div",{className:"ranges-skills space-y-4",children:O.map($=>{const{id:dl,name:D,level:A}=$;return p.jsxs("div",{children:[p.jsx("p",{className:`
         text-base text-justify
@@ -109,7 +109,7 @@ Error generating stack: `+u.message+`
           text-gray-500`})]}),p.jsxs("div",{className:`tools-card
         p-6 rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100`,children:[p.jsx("h2",{className:`tools-title
         font-oswald font-semibold text-4xl
-        text-gray-800 dark:text-blue-50`,children:"Tools"}),p.jsx("div",{className:`line-top
+        text-sky-900 dark:text-blue-50`,children:"Tools"}),p.jsx("div",{className:`line-top
           border-b w-26 mt-4 mb-4 md:mb-12 
           text-gray-500`}),p.jsx("div",{className:`card-tools
             flex flex-wrap content-start
@@ -118,5 +118,5 @@ Error generating stack: `+u.message+`
                     px-4 ${A}`,children:D},dl)})}),p.jsx("div",{className:`line-bottom
           border-b w-12 mt-4 md:mt-8
           text-gray-500`})]})]})})},Br=()=>{const v=()=>{window.scrollTo({top:0,behavior:"smooth"})};return p.jsx("button",{className:"cursor-pointer fixed z-50 right-6 bottom-6",onClick:v,children:p.jsx(jr,{className:`size-10
-    text-sky-500 hover:text-sky-700
-    dark:text-sky-100 dark:hover:text-sky-500`})})};function qr(){return p.jsxs(p.Fragment,{children:[p.jsx(Or,{}),p.jsx(Dr,{id:"home"}),p.jsx(Cr,{id:"about"}),p.jsx(Rr,{id:"skills"}),p.jsx(Br,{})]})}mr.createRoot(document.getElementById("root")).render(p.jsx(kt.StrictMode,{children:p.jsx(qr,{})}));
+    text-sky-900 hover:text-sky-950
+    dark:text-sky-400 dark:hover:text-sky-500`})})};function qr(){return p.jsxs(p.Fragment,{children:[p.jsx(Or,{}),p.jsx(Dr,{id:"home"}),p.jsx(Cr,{id:"about"}),p.jsx(Rr,{id:"skills"}),p.jsx(Br,{})]})}mr.createRoot(document.getElementById("root")).render(p.jsx(kt.StrictMode,{children:p.jsx(qr,{})}));
