@@ -70,7 +70,7 @@ const FrontSection = ({ id }) => {
 
             <h2
               className="font-oswald text-5xl font-bold
-            first-letter:text-7xl first-letter:text-gray-800 dark:first-letter:text-blue-500
+            first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-400
           text-gray-700 dark:text-gray-300"
             >
               MY Name

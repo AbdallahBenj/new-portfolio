@@ -41,8 +41,8 @@ const SkillsSection = ({ id }) => {
       id={id}
       className="skills-section
       flex items-center justify-center
-          w-full min-h-screen
-          bg-linear-to-r from-gray-100 to-gray-300
+      w-full min-h-screen
+      bg-linear-to-r from-gray-100 to-gray-300
       dark:from-gray-700 dark:to-gray-900
       transition-colors duration-500"
     >
@@ -60,7 +60,7 @@ const SkillsSection = ({ id }) => {
         {/* Skills Card */}
         <div
           className="skills-card md:col-span-2
-        p-6 rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
+        p-6 rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
         >
           <h2
             ref={targetElement}
@@ -119,7 +119,7 @@ const SkillsSection = ({ id }) => {
 
         <div
           className="tools-card
-        p-6 rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
+        p-6 rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
         >
           <h2
             ref={targetElement}

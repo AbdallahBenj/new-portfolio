@@ -52,8 +52,8 @@ const Header = () => {
 
           <h1
             className="text-2xl font-bold
-        text-blue-900 hover:text-blue-950
-        dark:text-amber-200 dark:hover:text-amber-300
+        text-sky-900 hover:text-sky-950
+        dark:text-sky-400 dark:hover:text-sky-500
           transition-colors duration-200"
           >
             <a href="#">Portfolio</a>

@@ -18,13 +18,23 @@ const AboutSection = ({ id }) => {
       id: 1,
       icon: LuCodeXml,
       text: "Clean, maintainable, and well-structured code",
+      iconColor: "text-rose-500",
+      boxColor: "border-rose-500 shadow-rose-700 dark:shadow-rose-400",
     },
     {
       id: 2,
       icon: LuSmartphone,
       text: "Fully responsive layouts for all screen sizes",
+      iconColor: "text-amber-500",
+      boxColor: "border-amber-400 shadow-amber-700 dark:shadow-amber-400",
     },
-    { id: 3, icon: LuZap, text: "Modern tools like React & Tailwind CSS" },
+    {
+      id: 3,
+      icon: LuZap,
+      text: "Modern tools like React & Tailwind CSS",
+      iconColor: "text-cyan-500",
+      boxColor: "border-cyan-500 shadow-cyan-700 dark:shadow-cyan-400",
+    },
   ];
 
   return (
@@ -50,20 +60,20 @@ const AboutSection = ({ id }) => {
         <div
           className="about-card
           md:col-span-3 p-6
-          rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
+          rounded-xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
         >
           <h2
             className="about-title
         font-oswald font-semibold text-4xl
-        text-gray-800 dark:text-blue-50"
+        text-sky-900 dark:text-sky-400"
           >
             About me
           </h2>
 
           <div
-            className="line
+            className="line top
           border-b w-26 mt-4 mb-12 
-          text-gray-500"
+          text-sky-900 dark:text-sky-400"
           ></div>
 
           {/* About Text content */}
@@ -75,7 +85,7 @@ const AboutSection = ({ id }) => {
                 <p
                   key={id}
                   className="
-                text-lg text-justify mt-6 
+                text-lg mt-6 
                 text-gray-700 dark:text-blue-100"
                 >
                   {text}
@@ -84,9 +94,9 @@ const AboutSection = ({ id }) => {
             })}
 
           <div
-            className="line
+            className="line bottom
           border-b w-12 mt-12
-          text-gray-500"
+          text-sky-900 dark:text-sky-400"
           ></div>
         </div>
 
@@ -95,15 +105,15 @@ const AboutSection = ({ id }) => {
         {iconsCard &&
           iconsCard.map((card) => {
             const Icon = card.icon;
-            const { id, text } = card;
+            const { id, text, iconColor, boxColor } = card;
             return (
               <div
                 key={id}
-                className="icon-card 
-                p-6 text-center
-                rounded-2xl shadow-sm shadow-blue-950 dark:shadow-blue-100"
+                className={`icon-card 
+                p-6 text-center border ${boxColor}
+                rounded-xl shadow-sm`}
               >
-                <Icon className="text-5xl text-blue-500 mb-6 m-auto" />
+                <Icon className={`text-5xl ${iconColor} mb-6 m-auto`} />
                 <p className="text-base text-gray-700 dark:text-blue-100">
                   {text}
                 </p>
