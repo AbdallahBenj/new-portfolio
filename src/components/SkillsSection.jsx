@@ -49,12 +49,7 @@ const SkillsSection = ({ id }) => {
           className={`skills-cards
           flex justify-center items-center flex-1
           w-full
-          transition-all duration-700 delay-200 ease-out 
-          ${
-            isVisible
-              ? "translate-y-0 scale-100 opacity-100"
-              : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
-          }`}
+          `}
         >
           {/* Content Child Cards Start */}
 
@@ -67,8 +62,15 @@ const SkillsSection = ({ id }) => {
           >
             {/* Skills Card */}
             <div
-              className="skills-card md:col-span-2
-              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100"
+              className={`skills-card md:col-span-2
+              p-6 rounded-xl
+              shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
+              transition-all duration-700 delay-200 ease-out 
+              ${
+                isVisible
+                  ? "translate-y-0 scale-100 opacity-100"
+                  : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+              }`}
             >
               <h2
                 className="skills-title
@@ -84,7 +86,7 @@ const SkillsSection = ({ id }) => {
               ></div>
 
               <div className="ranges-skills space-y-4">
-                {skillsLevel.map((skill) => {
+                {skillsLevel.map((skill, index) => {
                   const { id, name, level } = skill;
                   return (
                     <div key={id}>
@@ -107,7 +109,10 @@ const SkillsSection = ({ id }) => {
                           flex justify-end items-center pr-1
                           transition-all duration-2500 ease-in-out
                           text-blue-50 text-xs bg-linear-to-r from-blue-400 to-blue-500`}
-                          style={{ width: `${isVisible ? level : "10%"}` }}
+                          style={{
+                            width: `${isVisible ? level : "10%"}`,
+                            transitionDelay: `${index * 100}ms`,
+                          }}
                         >
                           {level}
                         </div>
@@ -124,9 +129,17 @@ const SkillsSection = ({ id }) => {
               ></div>
             </div>
 
+            {/* Tools Card */}
+
             <div
-              className="tools-card
-              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100"
+              className={`tools-card
+              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
+              transition-all duration-700 delay-400 ease-out 
+              ${
+                isVisible
+                  ? "translate-y-0 scale-100 opacity-100"
+                  : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+              }`}
             >
               <h2
                 className="tools-title
@@ -141,7 +154,6 @@ const SkillsSection = ({ id }) => {
                 text-gray-500"
               ></div>
 
-              {/* Tools Card */}
               <div
                 className="card-tools
                 flex flex-wrap content-start

@@ -4,7 +4,7 @@ import useScroll from "../hooks/useScroll";
 
 const ScrollToTop = () => {
   const visibleSection = useScroll(["hero"]);
-  const isHero = visibleSection["hero"] ?? true;
+  const isVisible = visibleSection["hero"] ?? true;
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -16,12 +16,12 @@ const ScrollToTop = () => {
   return (
     <button
       aria-label="Scroll to top"
-      aria-hidden={isHero}
+      tabIndex={isVisible ? 0 : -1}
       className={`scroll-to-top-btn
       cursor-pointer fixed z-50 right-6 bottom-6
       transition-all duration-500 ease-out delay-200
       ${
-        isHero
+        isVisible
           ? "opacity-0 translate-y-6 scale-90 pointer-events-none"
           : "opacity-100 translate-y-0 scale-100"
       }`}

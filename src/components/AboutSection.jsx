@@ -4,7 +4,7 @@ import useScroll from "../hooks/useScroll";
 
 const AboutSection = ({ id }) => {
   const visibleSection = useScroll([id]);
-  const isVisible = visibleSection[id];
+  const isSectionVisible = visibleSection[id];
 
   const aboutContent = [
     {
@@ -20,21 +20,21 @@ const AboutSection = ({ id }) => {
 
   const iconsCard = [
     {
-      id: 1,
+      id: "icon-1",
       icon: LuSearchCode,
       text: "Clean, maintainable, and well-structured code",
       iconBgColor: "bg-sky-500",
       boxColor: "border-sky-500 shadow-sky-700 dark:shadow-sky-400",
     },
     {
-      id: 2,
+      id: "icon-2",
       icon: LuTabletSmartphone,
       text: "Fully responsive layouts for all screen sizes",
       iconBgColor: "bg-rose-500",
       boxColor: "border-rose-500 shadow-rose-700 dark:shadow-rose-400",
     },
     {
-      id: 3,
+      id: "icon-3",
       icon: LuRefreshCcw,
       text: "Built with modern tools like React and Tailwind CSS",
       iconBgColor: "bg-emerald-500",
@@ -67,12 +67,7 @@ const AboutSection = ({ id }) => {
           className={`about-parent-card
           flex justify-center items-center flex-1
           w-full
-          transition-all duration-700 delay-200 ease-out 
-          ${
-            isVisible
-              ? "translate-y-0 scale-100 opacity-100"
-              : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
-          }`}
+          `}
         >
           {/* Content Child Cards Start */}
 
@@ -85,9 +80,16 @@ const AboutSection = ({ id }) => {
             {/* About Card */}
 
             <div
-              className="about-card
-              md:col-span-3 p-6
-              rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100"
+              className={`about-card
+                md:col-span-3
+                p-6 rounded-xl
+                shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
+                transition-all duration-700 delay-200 ease-out 
+          ${
+            isSectionVisible
+              ? "translate-y-0 scale-100 opacity-100"
+              : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+          }`}
             >
               <h2
                 className="about-title
@@ -130,15 +132,23 @@ const AboutSection = ({ id }) => {
             {/* Icons Cards */}
 
             {iconsCard &&
-              iconsCard.map((card) => {
+              iconsCard.map((card, index) => {
                 const Icon = card.icon;
                 const { id, text, iconBgColor, boxColor } = card;
+
                 return (
                   <div
                     key={id}
                     className={`icon-card 
                     p-8 text-center border ${boxColor}
-                    rounded-xl shadow-sm dark:shadow-sm`}
+                    rounded-xl shadow-sm dark:shadow-sm
+                    transition-all duration-700 delay-200 ease-out 
+                    ${
+                      isSectionVisible
+                        ? "translate-y-0 scale-100 opacity-100"
+                        : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+                    }`}
+                    style={{ transitionDelay: `${200 + index * 150}ms` }}
                   >
                     <div
                       className={`flex justify-center items-center
