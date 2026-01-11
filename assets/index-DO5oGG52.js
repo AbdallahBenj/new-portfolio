@@ -48,7 +48,7 @@ Error generating stack: `+e.message+`
           transition-all duration-700 delay-200 ease-out 
           ${A?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[x.jsx("div",{className:`profile-image aspect-square
             size-62 md:size-96
-            my-6 md:my-auto m-auto
+            mt-4 mb-2 md:my-auto m-auto
             border rounded-full text-blue-100
             shadow-[2px_4px_12px_3px] shadow-gray-600 
             dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500`,children:x.jsx(O1,{className:`h-full w-full 
