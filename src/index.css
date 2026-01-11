@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @font-face {
   font-family: "Oswald";
   src: url("/fonts/Oswald.woff2") format("woff2");
@@ -16,15 +14,11 @@
   font-display: swap;
 }
 
-
 .dark {
   --svg-g1: #030712;
   --svg-g2: #111827;
   --svg-bg: #dbeafe;
 }
-
-
-
 
 @theme {
   /* Define your custom brand color */
@@ -40,6 +34,12 @@
   --font-oswald: "Oswald", system-ui, sans-serif;
   --font-inter: "Inter", system-ui, sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Section Animation */
+
+  --animate-section: transition-all duration-700 delay-200 ease-out;
+  --animation-section-start: translate-y-0 scale-100 opacity-100;
+  --animation-section-end: translate-y-6 md:translate-y-8 scale-95 opacity-0;
 
 
 

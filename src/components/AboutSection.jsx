@@ -56,7 +56,6 @@ const AboutSection = ({ id }) => {
         id={id}
         className="about-container
         flex flex-col
-        border
         min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
@@ -68,8 +67,7 @@ const AboutSection = ({ id }) => {
           className={`about-parent-card
           flex justify-center items-center flex-1
           w-full
-          border border-red-500
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
           ${
             isVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -89,7 +87,7 @@ const AboutSection = ({ id }) => {
             <div
               className="about-card
               md:col-span-3 p-6
-              rounded-xl shadow-md dark:shadow-md shadow-blue-950 dark:shadow-blue-100"
+              rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100"
             >
               <h2
                 className="about-title
@@ -140,7 +138,7 @@ const AboutSection = ({ id }) => {
                     key={id}
                     className={`icon-card 
                     p-8 text-center border ${boxColor}
-                    rounded-xl shadow-md dark:shadow-md`}
+                    rounded-xl shadow-sm dark:shadow-sm`}
                   >
                     <div
                       className={`flex justify-center items-center

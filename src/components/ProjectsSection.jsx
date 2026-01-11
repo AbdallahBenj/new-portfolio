@@ -31,7 +31,7 @@ const ProjectsSection = ({ id }) => {
           flex justify-center items-center flex-1
           w-full
           border border-red-500 
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
         ${
           isVisible
             ? "translate-y-0 scale-100 opacity-100"

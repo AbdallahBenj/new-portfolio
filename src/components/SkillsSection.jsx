@@ -38,7 +38,6 @@ const SkillsSection = ({ id }) => {
         id={id}
         className="skills-container
         flex flex-col
-        border 
         min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
@@ -50,8 +49,7 @@ const SkillsSection = ({ id }) => {
           className={`skills-cards
           flex justify-center items-center flex-1
           w-full
-          border border-red-500
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-100 md:delay-200 ease-out 
           ${
             isVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -70,7 +68,7 @@ const SkillsSection = ({ id }) => {
             {/* Skills Card */}
             <div
               className="skills-card md:col-span-2
-              p-6 rounded-xl shadow-md dark:shadow-md shadow-blue-950 dark:shadow-blue-100"
+              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100"
             >
               <h2
                 className="skills-title
@@ -128,7 +126,7 @@ const SkillsSection = ({ id }) => {
 
             <div
               className="tools-card
-              p-6 rounded-xl shadow-md dark:shadow-md shadow-blue-950 dark:shadow-blue-100"
+              p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100"
             >
               <h2
                 className="tools-title
