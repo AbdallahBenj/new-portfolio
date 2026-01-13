@@ -74,7 +74,7 @@ const SkillsSection = ({ id }) => {
             >
               <h2
                 className="skills-title
-                font-oswald font-semibold text-4xl
+                font-heading font-semibold text-4xl
                 text-sky-900 dark:text-blue-50"
               >
                 Skills
@@ -143,7 +143,7 @@ const SkillsSection = ({ id }) => {
             >
               <h2
                 className="tools-title
-                font-oswald font-semibold text-4xl
+                font-heading font-medium text-4xl
                 text-sky-900 dark:text-blue-50"
               >
                 Tools
@@ -164,7 +164,7 @@ const SkillsSection = ({ id }) => {
                   return (
                     <div
                       key={id}
-                      className={`text-blue-50 font-semibold p-0.5
+                      className={`text-blue-50 font-medium p-0.5
                       rounded-full h-fit text-center
                       px-4 ${color}`}
                     >

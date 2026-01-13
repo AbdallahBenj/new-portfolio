@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <header
       className="header
-      font-oswald
+      font-heading
       fixed top-0 z-10
       flex w-full h-(--header-mobile) md:h-(--header-desktop)
       border-b border-blue-100
@@ -51,7 +51,8 @@ const Header = () => {
           {/* Logo */}
 
           <span
-            className="font-oswald text-2xl md:text-4xl font-bold
+            className="text-2xl md:text-4xl
+            font-medium
             text-sky-900 hover:text-sky-950
             dark:text-sky-400 dark:hover:text-sky-500
             transition-colors duration-200"

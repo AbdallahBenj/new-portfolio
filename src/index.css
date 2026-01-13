@@ -1,14 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Inter:wght@100..900&display=swap");
-
-
 @import "tailwindcss";
 
-
+@font-face {
+  font-family: "MyOswald";
+  src: url("/fonts/oswald-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
 
 @font-face {
-  font-family: "Oswald";
-  src: url("/fonts/Oswald.woff2") format("woff2");
-  font-weight: 200 700;
+  font-family: "MyOswald";
+  src: url("/fonts/oswald-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyOswald";
+  src: url("/fonts/oswald-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyOswald";
+  src: url("/fonts/oswald-latin-700.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -18,6 +34,7 @@
   font-weight: 100 900;
   font-display: swap;
 }
+
 
 .dark {
   --svg-g1: #030712;
@@ -36,22 +53,14 @@
   --svg-g2: #b7bec8;
   --svg-bg: #cce0ff;
 
-  --font-oswald: "Oswald", system-ui, sans-serif;
+  --font-heading: "MyOswald", system-ui, sans-serif;
   --font-inter: "Inter", system-ui, sans-serif;
 
   /* Enable class-based Dark Mode */
   --variant-dark: &: where(.dark, .dark *);
 }
 
+
+
 /* Enable manual Dark Mode switching by looking for the .dark class */
 @custom-variant dark (&:where(.dark, .dark *));
-
-@layer utilities {
-  .font-oswald {
-    font-family: var(--font-oswald);
-  }
-
-  .font-inter {
-    font-family: var(--font-inter);
-  }
-}

@@ -93,7 +93,7 @@ const AboutSection = ({ id }) => {
             >
               <h2
                 className="about-title
-                font-oswald font-semibold text-4xl
+                font-heading font-medium text-4xl
                 text-sky-900 dark:text-sky-400"
               >
                 About me

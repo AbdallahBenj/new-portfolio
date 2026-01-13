@@ -10,7 +10,8 @@ const FrontSection = ({ id }) => {
     <section
       id={id}
       aria-labelledby="hero-title"
-      className="front-section relative
+      className="front-section
+      relative
       min-h-vh md:min-h-screen grid
       transition-colors duration-500"
     >
@@ -80,9 +81,10 @@ const FrontSection = ({ id }) => {
               }`}
             >
               <span
-                className="text-md md:text-lg font-inter
-              text-gray-700 dark:text-gray-300
-              scale-x-73 origin-left"
+                className="hello-text
+                text-md md:text-lg
+                text-gray-700 dark:text-gray-300
+                scale-x-73 origin-left"
               >
                 Hello, I'm
               </span>
@@ -103,19 +105,19 @@ const FrontSection = ({ id }) => {
             >
               <h1
                 id="hero-title"
-                className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold
-              first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
-            text-gray-700 dark:text-gray-300"
+                className="font-heading font-semibold text-4xl md:text-5xl lg:text-6xl
+                first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
+              text-gray-700 dark:text-gray-300"
               >
                 MY Name
               </h1>
               <h2
-                className="font-inter text-md md:text-xl lg:text-2xl tracking-tight
+                className="text-md md:text-xl lg:text-2xl tracking-tight pt-2
                 text-gray-600 dark:text-gray-300"
               >
                 Front-End Developer
                 <span
-                  className="font-inter text-sm md:text-lg lg:text-xl tracking-tight block
+                  className="text-sm md:text-lg lg:text-xl tracking-tight block
                 text-gray-500 dark:text-gray-400"
                 >
                   {" "}
@@ -143,7 +145,7 @@ const FrontSection = ({ id }) => {
               </p>
               <div
                 className="line-bottom
-              border-b w-26 my-4 text-gray-500"
+              border-b w-24 my-4 text-gray-500"
               ></div>
             </div>
           </div>
