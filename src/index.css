@@ -28,11 +28,18 @@
   font-display: swap;
 }
 
+/* Background SVG Colors */
 
 .dark {
   --svg-g1: #030712;
   --svg-g2: #111827;
   --svg-bg: #dbeafe;
+}
+
+/* Background SVG Transition */
+ellipse,
+stop {
+  transition: fill 0.7s ease-in-out, stop-color 0.7s ease-in-out;
 }
 
 @theme {

@@ -1,10 +1,7 @@
 import DarkMode from "./DarkMode.jsx";
 import MobileNavLink from "./MobileNavLink.jsx";
-import useScrollHeader from "../hooks/useScrollHeader.js";
 
 const Header = () => {
-  const isUp = useScrollHeader();
-
   const pages = [
     {
       id: 1,
@@ -35,27 +32,37 @@ const Header = () => {
 
   return (
     <header
-      className={`header
-      font-heading
-      fixed top-0 z-10
+      className="header font-heading
+      overflow-hidden fixed top-0 z-10
       flex w-full h-(--header-mobile) md:h-(--header-desktop)
       border-b border-blue-100
-      bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
-      dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
       shadow-[0_4px_12px_-4px_#dbeafe]
-      transition-all duration-700 
-      ${
-        !isUp
-          ? "translate-y-0 opacity-100 "
-          : "-translate-y-(--header-mobile) md:-translate-y-(--header-desktop) opacity-0"
-      }`}
+      "
     >
+      {/* Light gradient */}
       <div
-        className="header-container m-auto px-6
+        className="absolute inset-0 -z-10
+        bg-linear-to-tr from-gray-200/70 via-gray-400/80 to-gray-500/90
+        transition-opacity duration-700 ease-in-out
+        dark:opacity-0"
+      />
+
+      {/* Dark gradient */}
+      <div
+        className="absolute inset-0 -z-10
+        dark:bg-linear-to-tr dark:from-gray-700/70 dark:via-gray-900/80 dark:to-gray-950/90
+        opacity-0 transition-opacity duration-700 ease-in-out
+        dark:opacity-100"
+      />
+
+      <div
+        className="header-container
+        relative z-10
+        m-auto px-6
         flex justify-between items-center w-full max-w-4xl"
       >
         {/*Brand Name*/}
-        <a href="/" className="brand">
+        <a href="./" className="brand">
           {/* Logo */}
 
           <span

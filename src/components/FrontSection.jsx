@@ -13,13 +13,13 @@ const FrontSection = ({ id }) => {
       className="front-section
       relative
       min-h-vh md:min-h-screen grid
-      transition-colors duration-500"
+      transition-colors duration-700 ease-in-out"
     >
       <BgFrontSection
         className="absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
       dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
-      transition-colors duration-500"
+      transition-colors duration-700"
       />
 
       {/*Profile Section*/}
@@ -27,7 +27,7 @@ const FrontSection = ({ id }) => {
       <div
         className="front-section-container
         flex justify-center
-        transition-colors duration-500"
+        transition-colors duration-700"
       >
         {/*Profile Card*/}
 
@@ -39,7 +39,7 @@ const FrontSection = ({ id }) => {
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]
-          transition-all duration-700 delay-200 ease-out 
+          transition-all duration-700 delay-200 ease-in-out 
           ${
             isVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -73,7 +73,7 @@ const FrontSection = ({ id }) => {
           >
             <div
               className={`hello-paragraph
-              transition-all duration-700 delay-200 ease-out 
+              transition-all duration-500 delay-200 ease-out 
               ${
                 isVisible
                   ? "translate-y-0 scale-100 opacity-100"

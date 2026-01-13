@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 
+// Turn On / Off Scroll Header
+const ENABLE_SCROLL_HEADER = false;
+
 const useScrollHeader = () => {
   const [initial, setInitial] = useState(0);
   const [isUp, setDirection] = useState(false);
 
   useEffect(() => {
+    if (!ENABLE_SCROLL_HEADER) return;
     const handleScroll = () => {
       const current = window.scrollY;
       const interval = Math.abs(current - initial);
