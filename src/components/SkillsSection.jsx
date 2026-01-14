@@ -29,16 +29,20 @@ const SkillsSection = ({ id }) => {
       className="skills-section
       w-full
       flex justify-center
+      
+      min-h-[min(100dvh,700px)]
+      md:min-h-[min(100dvh,900px)]
+      lg:min-h-[min(100dvh,1000px)]
+
       bg-linear-to-r from-gray-100 to-gray-300
       dark:from-gray-700 dark:to-gray-900
-      transition-colors duration-500"
+      transition-colors duration-700"
     >
       {/* Skills Container */}
       <div
         id={id}
         className="skills-container
         flex flex-col
-        min-h-dvh md:min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]

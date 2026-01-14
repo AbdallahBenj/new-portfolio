@@ -26,7 +26,7 @@ const Header = () => {
     {
       id: 5,
       name: "Contact",
-      link: "#test",
+      link: "#contact",
     },
   ];
 

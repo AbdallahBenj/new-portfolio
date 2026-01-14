@@ -11,8 +11,12 @@ const FrontSection = ({ id }) => {
       id={id}
       aria-labelledby="hero-title"
       className="front-section
-      relative
-      min-h-dvh md:min-h-screen grid
+      relative grid
+
+      min-h-[min(100dvh,700px)]
+      md:min-h-[min(100dvh,900px)]
+      lg:min-h-[min(100dvh,1000px)]
+      
       transition-colors duration-700 ease-in-out"
     >
       <BgFrontSection

@@ -3,7 +3,9 @@ import FrontSection from "./components/FrontSection.jsx";
 import AboutSection from "./components/AboutSection.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
-import TestSection from "./components/TestSection.jsx";
+import ContactSection from "./components/ContactSection.jsx";
+
+// import TestSection from "./components/TestSection.jsx";
 
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
@@ -15,7 +17,7 @@ function App() {
       <AboutSection id="about" />
       <SkillsSection id="skills" />
       <ProjectsSection id="projects" />
-      <TestSection id="test" />
+      <ContactSection id="contact" />
       <ScrollToTop />
     </>
   );
