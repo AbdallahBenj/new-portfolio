@@ -37,11 +37,11 @@ Error generating stack: `+e.message+`
             transition-colors duration-300 ease-in-out`,children:"Portfolio"})}),E.jsxs("nav",{"aria-label":"Main navigation",className:`nav-content
           flex flex-row gap-2 md:justify-between`,children:[E.jsx("ul",{className:"hidden md:flex flex-row gap-6",children:m.map(_=>{const{id:A,name:d,link:H}=_;return E.jsx("li",{className:"",children:E.jsx("a",{className:`font-medium
                     hover:border-b
-                    text-gray-900 hover:text-sky-950
+                    text-gray-800 hover:text-sky-950
                     dark:text-gray-300 dark:hover:text-sky-500
                     transition-colors duration-300 ease-in-out`,href:H,children:d})},`${A}-${d}`)})}),E.jsx(T1,{}),E.jsx(A1,{navLinks:m})]})]})]})};function O1(m){return kt({attr:{viewBox:"0 0 496 512"},child:[{tag:"path",attr:{d:"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"},child:[]}]})(m)}const Me=(m=[])=>{const[_,A]=Oe.useState({}),d=H=>{H.forEach(R=>{const L=R.target.id,al=R.isIntersecting;A(D=>D[L]===al?D:{...D,[L]:al})})};return Oe.useEffect(()=>{const H=new IntersectionObserver(d,{threshold:.2});return m.forEach(R=>{const L=document.getElementById(R);L&&H.observe(L)}),()=>H.disconnect()},[m]),_},M1=({className:m})=>E.jsxs("svg",{className:m,viewBox:"0 0 500 320",preserveAspectRatio:"xMidYMid slice",xmlns:"http://www.w3.org/2000/svg",children:[E.jsxs("defs",{children:[E.jsxs("linearGradient",{id:"linearGradient24030",children:[E.jsx("stop",{offset:"0",stopColor:"var(--svg-g1)",stopOpacity:"1"}),E.jsx("stop",{offset:"1",stopColor:"var(--svg-g2)",stopOpacity:"1"})]}),E.jsx("filter",{id:"filter16666",x:"-0.0054692522",y:"-0.0063574527",width:"1.0109385",height:"1.0127149",children:E.jsx("feGaussianBlur",{stdDeviation:"1.3918661"})}),E.jsx("radialGradient",{href:"#linearGradient24030",id:"radialGradient24032",cx:"540.91394",cy:"61.198723",r:"305.38715",gradientTransform:"matrix(-1,0,0,-0.86028986,1081.8279,113.84736)",gradientUnits:"userSpaceOnUse"})]}),E.jsxs("g",{transform:"translate(-32.913921,-61.198723)",children:[E.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"var(--svg-bg)",filter:"url(#filter16666)"}),E.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"url(#radialGradient24032)"})]})]}),D1=({id:m})=>{const A=Me([m])[m];return E.jsxs("section",{id:m,"aria-labelledby":"hero-title",className:`front-section
       relative
-      min-h-vh md:min-h-screen grid
+      min-h-dvh md:min-h-screen grid
       transition-colors duration-700 ease-in-out`,children:[E.jsx(M1,{className:`absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-100 via-gray-300 to-gray-400
       dark:from-gray-700 dark:via-gray-900 dark:to-gray-950
@@ -83,7 +83,7 @@ Error generating stack: `+e.message+`
       dark:from-gray-700 dark:to-gray-900
       transition-colors duration-500`,children:E.jsx("div",{id:m,className:`about-container
         flex flex-col
-        min-h-screen
+        min-h-dvh md:min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
@@ -116,7 +116,7 @@ Error generating stack: `+e.message+`
       dark:from-gray-700 dark:to-gray-900
       transition-colors duration-500`,children:E.jsx("div",{id:m,className:`skills-container
         flex flex-col
-        min-h-screen
+        min-h-dvh md:min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
@@ -197,4 +197,4 @@ Error generating stack: `+e.message+`
       transition-all duration-500 ease-out delay-200
       ${_?"opacity-0 translate-y-6 scale-90 pointer-events-none":"opacity-100 translate-y-0 scale-100"}`,onClick:A,children:E.jsx(j1,{className:`size-10
     text-sky-900 hover:text-sky-950
-    dark:text-sky-400 dark:hover:text-sky-500`})})};function G1(){return E.jsxs(E.Fragment,{children:[E.jsx(_1,{}),E.jsx(D1,{id:"home"}),E.jsx(C1,{id:"about"}),E.jsx(R1,{id:"skills"}),E.jsx(B1,{id:"projects"}),E.jsx(q1,{id:"test"}),E.jsx(Y1,{})]})}r1.createRoot(document.getElementById("root")).render(E.jsx(Oe.StrictMode,{children:E.jsx(G1,{})}));
+    dark:text-sky-400 dark:hover:text-sky-600`})})};function G1(){return E.jsxs(E.Fragment,{children:[E.jsx(_1,{}),E.jsx(D1,{id:"home"}),E.jsx(C1,{id:"about"}),E.jsx(R1,{id:"skills"}),E.jsx(B1,{id:"projects"}),E.jsx(q1,{id:"test"}),E.jsx(Y1,{})]})}r1.createRoot(document.getElementById("root")).render(E.jsx(Oe.StrictMode,{children:E.jsx(G1,{})}));
