@@ -92,7 +92,7 @@ const Header = () => {
                   <a
                     className="font-medium
                     hover:border-b
-                    text-gray-900 hover:text-sky-950
+                    text-gray-800 hover:text-sky-950
                     dark:text-gray-300 dark:hover:text-sky-500
                     transition-colors duration-300 ease-in-out"
                     href={link}

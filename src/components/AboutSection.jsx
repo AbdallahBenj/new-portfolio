@@ -56,7 +56,7 @@ const AboutSection = ({ id }) => {
         id={id}
         className="about-container
         flex flex-col
-        min-h-screen
+        min-h-dvh md:min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
