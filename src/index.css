@@ -49,8 +49,8 @@ stop {
   --header-mobile: 4rem;
   --header-desktop: 5rem;
 
-  --footer-mobile: 5rem;
-  --footer-desktop: 4rem;
+  --footer-mobile: 10rem;
+  --footer-desktop: 9rem;
 
   --svg-g1: #939dac;
   --svg-g2: #b7bec8;
@@ -59,8 +59,21 @@ stop {
   --font-inter: "Inter", system-ui, sans-serif;
   --font-heading: "MyOswald", system-ui, sans-serif;
 
-  /* Enable class-based Dark Mode */
-  --variant-dark: &: where(.dark, .dark *);
+  --animation-colors:
+
+    /* Enable class-based Dark Mode */
+    --variant-dark: &: where(.dark, .dark *);
+}
+
+/* Animations Classes */
+@layer utilities {
+  .animation-colors {
+    @apply transition-colors duration-500 motion-reduce:transition-none;
+  }
+
+  .animation-transform {
+    @apply transition-transform transition-opacity duration-700 ease-out motion-reduce:transition-none motion-reduce:transform-none;
+  }
 }
 
 

@@ -2,10 +2,15 @@ import { FaUserCircle } from "react-icons/fa";
 
 import useScroll from "../hooks/useScroll.js";
 import BgFrontSection from "./BgFrontSection.jsx";
+import PAGES from "../data/pages.js";
 
 const FrontSection = ({ id }) => {
   const sectionVisible = useScroll([id]);
   const isSectionVisible = sectionVisible[id];
+
+  const page = PAGES.find((page) => page.id === id);
+  if (!page || !page.enabled) return;
+
   return (
     <section
       id={id}
@@ -17,13 +22,13 @@ const FrontSection = ({ id }) => {
       md:min-h-[min(100dvh,900px)]
       lg:min-h-[min(100dvh,1000px)]
       
-      transition-colors duration-700 ease-in-out"
+      animation-colors"
     >
       <BgFrontSection
         className="absolute inset-0 w-full h-full -z-10
       bg-linear-to-tr from-gray-200 via-gray-300 to-gray-400
       dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
-      transition-colors duration-700 ease-in-out"
+      animation-colors"
       />
 
       {/*Profile Section*/}
@@ -42,7 +47,7 @@ const FrontSection = ({ id }) => {
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]
-          transition-all duration-700 delay-200 ease-in-out 
+          animation-transform delay-200
           ${
             isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -64,7 +69,7 @@ const FrontSection = ({ id }) => {
               focusable="false"
               className="h-full w-full 
             text-gray-700 dark:text-blue-500 
-              transition-colors duration-500 ease-in-out"
+              animation-colors"
             />
           </div>
 
@@ -76,7 +81,7 @@ const FrontSection = ({ id }) => {
           >
             <div
               className={`hello-paragraph
-              transition-all duration-500 delay-200 ease-out 
+              animation-transform delay-200 
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
@@ -99,7 +104,7 @@ const FrontSection = ({ id }) => {
 
             <div
               className={`name-paragraph
-              transition-all duration-700 delay-400 ease-out 
+              animation-transform delay-400
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
@@ -131,7 +136,7 @@ const FrontSection = ({ id }) => {
 
             <div
               className={`last-paragraph
-              transition-all duration-700 delay-600 ease-out 
+              animation-transform delay-600
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"

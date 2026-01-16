@@ -31,26 +31,28 @@ const MobileNavLink = ({ navLinks }) => {
           isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
         } `}
       >
-        {navLinks.map((page) => {
-          // const { name, link } = page;
-          return (
-            <li
-              key={page.name}
-              className="flex items-center
+        {navLinks
+          .filter((page) => page.enabled)
+          .map((page) => {
+            // const { name, link } = page;
+            return (
+              <li
+                key={page.name}
+                className="flex items-center
               h-14
               text-gray-700 dark:text-gray-200
               border-b border-gray-500"
-            >
-              <a
-                className="block w-full"
-                href={page.link}
-                onClick={() => setOpen(false)}
               >
-                {page.name}
-              </a>
-            </li>
-          );
-        })}
+                <a
+                  className="block w-full"
+                  href={page.link}
+                  onClick={() => setOpen(false)}
+                >
+                  {page.name}
+                </a>
+              </li>
+            );
+          })}
       </ul>
     </>
   );

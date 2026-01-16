@@ -1,22 +1,28 @@
 import useScroll from "../hooks/useScroll";
 import SocialContact from "./SocialContact.jsx";
 import ContactForm from "./ContactForm.jsx";
+import PAGES from "../data/pages.js";
 
 const ContactSection = ({ id }) => {
   const visibleSection = useScroll([id]);
   const isSectionVisible = visibleSection[id];
+
+  const page = PAGES.find((page) => page.id === id);
+  if (!page || !page.enabled) return;
+
   return (
     <section
       className="contact-section
       w-full
       flex justify-center
 
-      min-h-[calc(100dvh-var(--footer-mobile))]
-      md:min-h-[calc(100dvh-var(--footer-desktop))]
+      min-h-[min(100dvh,700px)]
+      md:min-h-[min(100dvh,900px)]
+      lg:min-h-[min(100dvh,1000px)]
 
       bg-linear-to-r from-gray-200 to-gray-300
       dark:from-gray-800 dark:to-gray-900
-      transition-colors duration-700"
+      animation-colors"
     >
       {/* Contact Container */}
       <div
@@ -33,7 +39,7 @@ const ContactSection = ({ id }) => {
           className={`contact-cards
           flex justify-center items-center flex-1
           w-full
-          transition-all duration-700 delay-200 ease-out 
+          animation-transform delay-200 
         ${
           isSectionVisible
             ? "translate-y-0 scale-100 opacity-100"
@@ -49,7 +55,7 @@ const ContactSection = ({ id }) => {
             w-full
             p-6 rounded-xl
             shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
-            transition-all duration-700 delay-200 ease-out 
+            animation-transform delay-200
             ${
               isSectionVisible
                 ? "translate-y-0 scale-100 opacity-100"
@@ -75,8 +81,8 @@ const ContactSection = ({ id }) => {
             <SocialContact />
 
             <div
-              className="line top
-              border-b w-26 mt-6 mb-6 md:mt-10 md:mb-12 
+              className="line medium
+              border-b w-26 my-6 md:mt-10 md:mb-6 
               text-sky-900 dark:text-sky-400"
             ></div>
 

@@ -1,35 +1,8 @@
 import DarkMode from "./DarkMode.jsx";
 import MobileNavLink from "./MobileNavLink.jsx";
+import PAGES from "../data/pages.js";
 
 const Header = () => {
-  const pages = [
-    {
-      id: 1,
-      name: "Home",
-      link: "#home",
-    },
-    {
-      id: 2,
-      name: "About",
-      link: "#about",
-    },
-    {
-      id: 3,
-      name: "Skills",
-      link: "#skills",
-    },
-    {
-      id: 4,
-      name: "Projects",
-      link: "#projects",
-    },
-    {
-      id: 5,
-      name: "Contact",
-      link: "#contact",
-    },
-  ];
-
   return (
     <header
       className="header font-heading
@@ -85,7 +58,7 @@ const Header = () => {
         >
           {/* Desktop Nav Link */}
           <ul className="hidden md:flex flex-row gap-6">
-            {pages.map((page) => {
+            {PAGES.filter((page) => page.enabled).map((page) => {
               const { id, name, link } = page;
               return (
                 <li key={`${id}-${name}`} className="">
@@ -110,7 +83,7 @@ const Header = () => {
 
           {/* mobile Nav Link */}
 
-          <MobileNavLink navLinks={pages} />
+          <MobileNavLink navLinks={PAGES} />
         </nav>
       </div>
     </header>

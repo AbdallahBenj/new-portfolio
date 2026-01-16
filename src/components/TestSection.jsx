@@ -1,13 +1,23 @@
 import useScroll from "../hooks/useScroll";
+import PAGES from "../data/pages.js";
 
 const TestSection = ({ id }) => {
   const visibleSection = useScroll([id]);
   const isSectionVisible = visibleSection[id];
+
+  const page = PAGES.find((page) => page.id === id);
+  if (!page || !page.enabled) return;
+
   return (
     <section
       className="test-section
       w-full
       flex justify-center
+
+      min-h-[min(100dvh,700px)]
+      md:min-h-[min(100dvh,900px)]
+      lg:min-h-[min(100dvh,1000px)]
+      
       bg-linear-to-r from-gray-200 to-gray-300
       dark:from-gray-800 dark:to-gray-950
       transition-colors duration-700"
@@ -18,7 +28,6 @@ const TestSection = ({ id }) => {
         className="test-container
         flex flex-col
         border 
-        min-h-screen
         w-full max-w-4xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]

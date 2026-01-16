@@ -1,8 +1,12 @@
 import useScroll from "../hooks/useScroll";
+import PAGES from "../data/pages.js";
 
 const SkillsSection = ({ id }) => {
   const visibleSections = useScroll([id]);
   const isSectionVisible = visibleSections[id];
+
+  const page = PAGES.find((page) => page.id === id);
+  if (!page || !page.enabled) return;
 
   const skillsLevel = [
     { id: 1, name: "React", level: "70%" },
@@ -36,7 +40,7 @@ const SkillsSection = ({ id }) => {
 
       bg-linear-to-r from-gray-200 to-gray-300
       dark:from-gray-800 dark:to-gray-900
-      transition-colors duration-700"
+      animation-colors"
     >
       {/* Skills Container */}
       <div
@@ -69,7 +73,7 @@ const SkillsSection = ({ id }) => {
               className={`skills-card md:col-span-2
               p-6 rounded-xl
               shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
-              transition-all duration-700 delay-200 ease-out 
+              animation-transform delay-200
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
@@ -138,7 +142,7 @@ const SkillsSection = ({ id }) => {
             <div
               className={`tools-card
               p-6 rounded-xl shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
-              transition-all duration-700 delay-400 ease-out 
+              animation-transform delay-300
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"

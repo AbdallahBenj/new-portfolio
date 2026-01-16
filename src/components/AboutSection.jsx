@@ -1,10 +1,14 @@
 import { LuSearchCode, LuTabletSmartphone, LuRefreshCcw } from "react-icons/lu";
 
 import useScroll from "../hooks/useScroll";
+import PAGES from "../data/pages.js";
 
 const AboutSection = ({ id }) => {
   const visibleSection = useScroll([id]);
   const isSectionVisible = visibleSection[id];
+
+  const page = PAGES.find((page) => page.id === id);
+  if (!page || !page.enabled) return true;
 
   const aboutContent = [
     {
@@ -55,7 +59,7 @@ const AboutSection = ({ id }) => {
 
       bg-linear-to-r from-gray-200 to-gray-300
       dark:from-gray-800 dark:to-gray-900
-      transition-colors duration-700"
+      animation-colors"
     >
       {/* About Container */}
       <div
@@ -89,7 +93,7 @@ const AboutSection = ({ id }) => {
                 md:col-span-3
                 p-6 rounded-xl
                 shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
-                transition-all duration-700 delay-200 ease-out 
+                animation-transform delay-200
           ${
             isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -147,7 +151,7 @@ const AboutSection = ({ id }) => {
                     className={`icon-card 
                     p-8 text-center border ${boxColor}
                     rounded-xl shadow-sm dark:shadow-sm
-                    transition-all duration-700 delay-200 ease-out 
+                    animation-transform delay-200
                     ${
                       isSectionVisible
                         ? "translate-y-0 scale-100 opacity-100"

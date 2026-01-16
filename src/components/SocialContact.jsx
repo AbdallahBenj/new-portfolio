@@ -11,31 +11,31 @@ const SocialContact = () => {
       id: "1",
       name: "github",
       Icon: FaGithub,
-      link: "#",
+      link: "https://github.com/",
     },
     {
       id: "2",
       name: "linkedin",
       Icon: FaLinkedin,
-      link: "#",
+      link: "https://www.linkedin.com/",
     },
     {
       id: "3",
       name: "freeCodeCamp",
       Icon: FaFreeCodeCamp,
-      link: "#",
+      link: "https://www.freecodecamp.org/",
     },
   ];
   return (
     <ul
       className="icon-card 
-    flex justify-center gap-4
-    "
+      flex justify-center gap-4 mb-0
+      animation-colors"
     >
       {socialContent.map((icon, index) => {
         const { id, name, Icon, link } = icon;
         return (
-          <li key={id}>
+          <li key={id} className="">
             <a
               href={link}
               aria-label={name}
@@ -43,8 +43,10 @@ const SocialContact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`icons
-              size-10 md:size-12 rounded-lg p-2
-              inline-flex items-center justify-center
+              rounded-lg p-2
+
+              size-10 md:size-12 
+            inline-flex items-center justify-center
 
               bg-sky-900 hover:bg-sky-950
               dark:bg-gray-100 hover:dark:bg-gray-300
@@ -55,15 +57,13 @@ const SocialContact = () => {
               focus-visible:ring-offset-2
               dark:focus-visible:ring-sky-400
 
-              transition-all duration-700 ease-out 
-              motion-reduce:transition-none
-              motion-reduce:transform-none
+              animation-transform 
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
-              style={{ transitionDelay: `${200 + index * 150}ms` }}
+              style={{ transitionDelay: `${200 + index * 100}ms` }}
             >
               <Icon
                 aria-hidden="true"
