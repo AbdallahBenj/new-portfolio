@@ -19,7 +19,7 @@ const Footer = () => {
         flex flex-col md:flex-row justify-evenly"
       >
         <p className="text-gray-700 dark:text-gray-300">
-          <span className="text-sky-900 dark:text-sky-500">Portfolio</span> ©{" "}
+          <span className="text-sky-900 dark:text-sky-500">Abdallah</span> ©{" "}
           {year} — All rights reserved
         </p>
         <p className="text-gray-700 dark:text-gray-300">

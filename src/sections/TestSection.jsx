@@ -1,7 +1,7 @@
-import useScrollSections from "../hooks/useScrollSections.js";
-import PAGES from "../data/pages.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
+import PAGES from "@/data/pages.js";
 
-const ProjectsSection = ({ id }) => {
+const TestSection = ({ id }) => {
   const visibleSection = useScrollSections([id]);
   const isSectionVisible = visibleSection[id];
 
@@ -10,7 +10,7 @@ const ProjectsSection = ({ id }) => {
 
   return (
     <section
-      className="projects-section
+      className="test-section
       w-full
       flex justify-center
 
@@ -21,10 +21,10 @@ const ProjectsSection = ({ id }) => {
       sections-background
       animation-colors"
     >
-      {/* Projects Container */}
+      {/* Test Container */}
       <div
         id={id}
-        className="projects-container
+        className="test-container
         flex flex-col
         border 
         w-full max-w-4xl
@@ -32,12 +32,12 @@ const ProjectsSection = ({ id }) => {
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]"
       >
-        {/* Projects Parent Card */}
+        {/* Test Parent Card */}
         <div
-          className={`projects-cards
+          className={`test-cards
           flex justify-center items-center flex-1
           w-full
-          border border-red-500 
+          border border-red-500
           animation-transform delay-200
         ${
           isSectionVisible
@@ -51,7 +51,7 @@ const ProjectsSection = ({ id }) => {
             className="text-2xl
         text-blue-900 dark:text-blue-50"
           >
-            This is Projects Section
+            This is test Section
           </h2>
 
           {/* Contents Child Cards End */}
@@ -61,4 +61,4 @@ const ProjectsSection = ({ id }) => {
   );
 };
 
-export default ProjectsSection;
+export default TestSection;

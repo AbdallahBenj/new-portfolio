@@ -1,5 +1,5 @@
-import useScrollSections from "../hooks/useScrollSections.js";
-import PAGES from "../data/pages.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
+import PAGES from "@/data/pages.js";
 
 const SkillsSection = ({ id }) => {
   const visibleSections = useScrollSections([id]);

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
-const MobileNavLink = ({ navLinks, currentSection }) => {
+const MobileMenu = ({ navLinks, currentSection }) => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -62,4 +62,4 @@ const MobileNavLink = ({ navLinks, currentSection }) => {
   );
 };
 
-export default MobileNavLink;
+export default MobileMenu;

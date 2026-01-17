@@ -1,7 +1,7 @@
 import { LuSearchCode, LuTabletSmartphone, LuRefreshCcw } from "react-icons/lu";
 
-import useScrollSections from "../hooks/useScrollSections.js";
-import PAGES from "../data/pages.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
+import PAGES from "@/data/pages.js";
 
 const AboutSection = ({ id }) => {
   const visibleSection = useScrollSections([id]);

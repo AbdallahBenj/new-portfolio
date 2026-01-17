@@ -1,6 +1,6 @@
 import { LuSquareChevronUp } from "react-icons/lu";
 
-import useScrollSections from "../hooks/useScrollSections.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
 
 const ScrollToTop = () => {
   const visibleSection = useScrollSections(["hero"]);

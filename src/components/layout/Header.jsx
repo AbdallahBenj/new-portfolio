@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 
-import DarkMode from "./DarkMode.jsx";
-import MobileNavLink from "./MobileNavLink.jsx";
+import DarkMode from "@/components/common/DarkMode.jsx";
+import MobileMenu from "./MobileMenu.jsx";
 
-import useCurrentSection from "../hooks/useCurrentSection.js";
-import PAGES from "../data/pages.js";
+import useCurrentSection from "@/hooks/useCurrentSection.js";
+import PAGES from "@/data/pages.js";
 
 const Header = () => {
   const sectionIds = useMemo(() => PAGES.map((page) => page.id), []);
@@ -52,7 +52,7 @@ const Header = () => {
             dark:text-sky-500 dark:hover:text-sky-400
             animation-colors ease-in-out"
           >
-            Portfolio
+            Abdallah
           </span>
         </a>
 
@@ -95,7 +95,7 @@ const Header = () => {
 
           {/* mobile Nav Link */}
 
-          <MobileNavLink navLinks={PAGES} currentSection={currentSection} />
+          <MobileMenu navLinks={PAGES} currentSection={currentSection} />
         </nav>
       </div>
     </header>

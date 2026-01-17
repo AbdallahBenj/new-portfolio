@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import useScrollSections from "../hooks/useScrollSections.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
 
 const ContactForm = () => {
   const visibleSections = useScrollSections(["contact"]);
@@ -41,7 +41,7 @@ const ContactForm = () => {
         Thanks for reaching out!
         <br />
         Your message has been sent successfully.
-      </>
+      </>,
     );
     resetFormData();
   };

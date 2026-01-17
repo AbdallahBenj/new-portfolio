@@ -1,8 +1,9 @@
 import { FaUserCircle } from "react-icons/fa";
+import { FaUserAstronaut } from "react-icons/fa";
 
-import useScrollSections from "../hooks/useScrollSections.js";
-import BgFrontSection from "./BgFrontSection.jsx";
-import PAGES from "../data/pages.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
+import BgFrontSection from "@/components/common/BgFrontSection.jsx";
+import PAGES from "@/data/pages.js";
 
 const FrontSection = ({ id }) => {
   const sectionVisible = useScrollSections([id]);
@@ -57,18 +58,42 @@ const FrontSection = ({ id }) => {
           {/*Profile Image Section*/}
 
           <div
-            className="profile-image aspect-square
+            className="
+            relative
+            aspect-square
             size-56 md:size-96
-            my-6 md:my-auto m-auto
-            border rounded-full text-blue-100
-            shadow-[2px_4px_12px_3px] shadow-gray-600 
-            dark:shadow-[2px_4px_12px_3px] dark:shadow-gray-500"
+            mx-auto my-6 md:my-auto
+            rounded-full
+
+            /* Glow (before) */
+            before:absolute
+            before:inset-0
+            before:rounded-full
+            before:bg-gray-500/25
+            dark:before:bg-blue-500/25
+            before:blur-2xl
+            before:opacity-70
+            before:content-['']
+
+
+            /* Styling */
+            bg-neutral-100/60 
+            dark:bg-neutral-900/60
+            ring-2 
+            ring-white/20 
+            dark:ring-white/20 
+            shadow-[0_20px_40px_-15px]
+            shadow-black/40
+            dark:shadow-black/70
+            animation-colors"
           >
             <FaUserCircle
               aria-hidden="true"
               focusable="false"
-              className="h-full w-full 
-            text-gray-700 dark:text-blue-500 
+              className="
+              relative z-10
+              h-full w-full
+              text-gray-700 dark:text-blue-500
               animation-colors"
             />
           </div>
@@ -117,7 +142,7 @@ const FrontSection = ({ id }) => {
                 first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
               text-gray-700 dark:text-gray-300"
               >
-                MY Name
+                Abdallah
               </h1>
               <h2
                 className="text-md md:text-xl lg:text-2xl tracking-tight pt-2

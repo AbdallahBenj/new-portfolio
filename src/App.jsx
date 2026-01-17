@@ -1,13 +1,14 @@
-import Header from "./components/Header.jsx";
-import FrontSection from "./components/FrontSection.jsx";
-import AboutSection from "./components/AboutSection.jsx";
-import SkillsSection from "./components/SkillsSection.jsx";
-import ProjectsSection from "./components/ProjectsSection.jsx";
-import ContactSection from "./components/ContactSection.jsx";
-import TestSection from "./components/TestSection.jsx";
-import Footer from "./components/Footer.jsx";
+import Header from "./components/layout/Header.jsx";
+import Footer from "./components/layout/Footer.jsx";
 
-import ScrollToTop from "./components/ScrollToTop.jsx";
+import FrontSection from "./sections/FrontSection.jsx";
+import AboutSection from "./sections/AboutSection.jsx";
+import SkillsSection from "./sections/SkillsSection.jsx";
+import ProjectsSection from "./sections/ProjectsSection.jsx";
+import ContactSection from "./sections/ContactSection.jsx";
+import TestSection from "./sections/TestSection.jsx";
+
+import ScrollToTop from "./components/common/ScrollToTop.jsx";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
-import useScrollSections from "../hooks/useScrollSections.js";
-import SocialContact from "./SocialContact.jsx";
-import ContactForm from "./ContactForm.jsx";
-import PAGES from "../data/pages.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
+import SocialContact from "@/components/common/SocialContact.jsx";
+import ContactForm from "@/components/common/ContactForm.jsx";
+import PAGES from "@/data/pages.js";
 
 const ContactSection = ({ id }) => {
   const visibleSection = useScrollSections([id]);

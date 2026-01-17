@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaFreeCodeCamp } from "react-icons/fa";
 
-import useScrollSections from "../hooks/useScrollSections.js";
+import useScrollSections from "@/hooks/useScrollSections.js";
 
 const SocialContact = () => {
   const visibleSection = useScrollSections(["contact"]);
