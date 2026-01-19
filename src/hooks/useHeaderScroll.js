@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // Turn On / Off Scroll Header
 const ENABLE_SCROLL_HEADER = false;
 
-const useScrollHeader = () => {
+const useHeaderScroll = () => {
   const [initial, setInitial] = useState(0);
   const [isUp, setDirection] = useState(false);
 
@@ -37,4 +37,4 @@ const useScrollHeader = () => {
   return isUp;
 };
 
-export default useScrollHeader;
+export default useHeaderScroll;
