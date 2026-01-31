@@ -30,7 +30,7 @@ Error generating stack: `+e.message+`
         opacity-0 dark:opacity-100`}),v.jsxs("div",{className:`header-container
         relative z-10
         m-auto px-6
-        flex justify-between items-center w-full max-w-4xl`,children:[v.jsx("a",{href:"./",className:"brand",children:v.jsx("span",{className:`text-2xl md:text-4xl
+        flex justify-between items-center w-full max-w-5xl`,children:[v.jsx("a",{href:"./",className:"brand",children:v.jsx("span",{className:`text-2xl md:text-4xl
             font-medium
             text-sky-900 hover:text-sky-950
             dark:text-sky-500 dark:hover:text-sky-400
@@ -48,7 +48,7 @@ Error generating stack: `+e.message+`
       shadow-sm shadow-sky-100
       animation-colors`,children:v.jsxs("div",{className:`footer-container
         font-heading text-sm
-        w-full max-w-4xl px-6
+        w-full max-w-5xl px-6
         flex flex-col md:flex-row justify-evenly`,children:[v.jsxs("p",{className:"text-gray-700 dark:text-gray-300",children:[v.jsx("span",{className:"text-sky-900 dark:text-sky-500",children:"Abdallah"})," ©"," ",r," — All rights reserved"]}),v.jsxs("p",{className:"text-gray-700 dark:text-gray-300",children:["Built with ",v.jsx("span",{className:"text-sky-500",children:"React"})," ",v.jsx(Rm,{"aria-hidden":"true",className:"text-rose-500 inline"})," ",v.jsx("span",{className:"text-emerald-500",children:"Tailwind"})," CSS"]})]})})},Ym=({className:r})=>v.jsxs("svg",{className:r,viewBox:"0 0 500 320",preserveAspectRatio:"xMidYMid slice",xmlns:"http://www.w3.org/2000/svg",children:[v.jsxs("defs",{children:[v.jsxs("linearGradient",{id:"linearGradient24030",children:[v.jsx("stop",{offset:"0",stopColor:"var(--svg-g1)",stopOpacity:"1"}),v.jsx("stop",{offset:"1",stopColor:"var(--svg-g2)",stopOpacity:"1"})]}),v.jsx("filter",{id:"filter16666",x:"-0.0054692522",y:"-0.0063574527",width:"1.0109385",height:"1.0127149",children:v.jsx("feGaussianBlur",{stdDeviation:"1.3918661"})}),v.jsx("radialGradient",{href:"#linearGradient24030",id:"radialGradient24032",cx:"540.91394",cy:"61.198723",r:"305.38715",gradientTransform:"matrix(-1,0,0,-0.86028986,1081.8279,113.84736)",gradientUnits:"userSpaceOnUse"})]}),v.jsxs("g",{transform:"translate(-32.913921,-61.198723)",children:[v.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"var(--svg-bg)",filter:"url(#filter16666)"}),v.jsx("ellipse",{cx:"540.91394",cy:"61.198723",rx:"305.38715",ry:"262.72147",fill:"url(#radialGradient24032)"})]})]}),Gm=({id:r})=>{const T=Nt([r])[r],s=Ft.find(_=>_.id===r);if(!(!s||!s.enabled))return v.jsxs("section",{id:r,"aria-labelledby":"hero-title",className:`front-section
       relative grid
 
@@ -62,7 +62,7 @@ Error generating stack: `+e.message+`
       animation-colors`}),v.jsx("div",{className:`front-section-container
         flex justify-center`,children:v.jsxs("div",{id:"hero",className:`hero-section-card
           flex flex-col md:flex-row-reverse
-          w-full max-w-4xl
+          w-full max-w-5xl
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]
@@ -126,7 +126,7 @@ Error generating stack: `+e.message+`
       sections-background
       animation-colors`,children:v.jsx("div",{id:r,className:`about-container
         flex flex-col
-        w-full max-w-4xl
+        w-full max-w-5xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:v.jsx("div",{className:`about-parent-card
@@ -162,7 +162,7 @@ Error generating stack: `+e.message+`
       sections-background
       animation-colors`,children:v.jsx("div",{id:r,className:`skills-container
         flex flex-col
-        w-full max-w-4xl
+        w-full max-w-5xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:v.jsx("div",{className:`skills-cards
@@ -201,7 +201,7 @@ Error generating stack: `+e.message+`
                       rounded-full h-fit text-center
                       px-4 ${K}`,children:B},D)})}),v.jsx("div",{className:`line-bottom
                 border-b w-12 mt-4 md:mt-8
-                text-gray-500`})]})]})})})})},gf=[{projectId:"project-1",projectTitle:"Fitness Landing Page",projectSubtitle:"Smart Guided UX",projectImage:"images/screenshot-fitness-landing-page.webp",projectLink:"https://abdallahbenj.github.io/fitness-landing-page/",projectDescription:"Interactive fitness landing page built with React, Vite, and Tailwind CSS, featuring guided navigation, preserved user selections, and a smart booking flow from classes to plans to contact. Demonstrates conversion-focused UX and state-driven front-end design."}],km=({id:r})=>{const O=gf.map(D=>D.projectId),T=Nt([r,...O]),s=T[r],_=Ft.find(D=>D.id===r);if(!(!_||!_.enabled))return v.jsx("section",{className:`projects-section
+                text-gray-500`})]})]})})})})},gf=[{projectId:"project-1",projectTitle:"Fitness Landing Page",projectSubtitle:"Smart Guided UX",projectImage:"images/screenshot-fitness-landing-page-900.webp",projectLink:"https://abdallahbenj.github.io/fitness-landing-page/",projectDescription:"Interactive fitness landing page built with React, Vite, and Tailwind CSS, featuring guided navigation, preserved user selections, and a smart booking flow from classes to plans to contact. Demonstrates conversion-focused UX and state-driven front-end design."}],km=({id:r})=>{const O=gf.map(D=>D.projectId),T=Nt([r,...O]),s=T[r],_=Ft.find(D=>D.id===r);if(!(!_||!_.enabled))return v.jsx("section",{className:`projects-section
       w-full
       flex justify-center
 
@@ -212,38 +212,45 @@ Error generating stack: `+e.message+`
       sections-background
       animation-colors`,children:v.jsx("div",{id:r,className:`projects-container
         flex flex-col
-        w-full max-w-4xl
+        w-full max-w-5xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:v.jsx("div",{className:`projects-cards
           w-full
           grid gap-y-[calc(var(--header-mobile)+1rem)] 
           md:gap-y-[calc(var(--header-desktop)+1.5rem)]
-          animation-transform delay-200
+          animation-transform
           ${s?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:gf&&gf.map(D=>{const{projectId:B,projectTitle:K,projectSubtitle:M,projectImage:A,projectDescription:L,projectLink:q}=D;return v.jsxs("div",{id:B,className:`skills-section-card
-                  grid md:grid-cols-3 gap-6
-                  h-full w-full`,children:[v.jsx("div",{className:`project-image-card md:col-span-2
-                      order-2 md:order-1
-                      rounded-xl overflow-auto no-scrollbar
+                  grid md:grid-cols-3 gap-6 items-stretch
+                  h-full w-full`,children:[v.jsxs("div",{className:`project-description-card 
+                      h-fit
+                      md:overflow-auto no-scrollbar
                       max-h-[calc(100dvh-var(--header-mobile)-2rem)]
                       md:max-h-[calc(100dvh-var(--header-desktop)-3rem)]
-                      shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
-                      animation-transform
-                      ${T[B]?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:v.jsx("a",{href:q,target:"_blank",rel:"noopener noreferrer",className:"cursor-pointer",children:v.jsx("img",{className:"rounded-xl w-full object-cover object-top",src:A,alt:K})})}),v.jsxs("div",{className:`project-description-card 
-                      order-1 md:order-2
+
                       p-6 rounded-xl
                       shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
                       animation-transform delay-200
-                      ${T[B]?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[v.jsx("h2",{className:`tools-title
+                      ${T[B]?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:[v.jsxs("h2",{className:`tools-title
                       font-heading font-medium text-4xl
-                      text-sky-900 dark:text-sky-400`,children:K}),v.jsx("div",{className:`line-top
-                      border-b w-26 mt-4 mb-4 md:mb-12 
+                      text-sky-900 dark:text-sky-400`,children:[K," ",v.jsx("span",{children:"- Project"})]}),v.jsx("div",{className:`line-top
+                      border-b w-26 mt-4 mb-4 md:mb-6 
                       text-gray-500`}),v.jsx("h3",{className:`tools-subtitle
-                      font-bold text-2xl mb-6
+                      font-bold text-2xl mb-4
                       text-gray-700 dark:text-gray-200`,children:M}),v.jsx("p",{className:`tools-description
                       text-gray-600 dark:text-gray-300`,children:L}),v.jsx("div",{className:`line-bottom
                       border-b w-12 mt-4 md:mt-8
-                      text-gray-500`})]})]},B)})})})})},Wm=()=>{const O=Nt(["contact"]).contact,T=[{id:"1",name:"github",Icon:Cm,link:"https://github.com/"},{id:"2",name:"linkedin",Icon:Hm,link:"https://www.linkedin.com/"},{id:"3",name:"freeCodeCamp",Icon:Um,link:"https://www.freecodecamp.org/"}];return v.jsx("ul",{className:`icon-card 
+                      text-gray-500`})]}),v.jsx("div",{className:`project-image-card md:col-span-2 
+                      rounded-xl
+                      border border-gray-500
+                      
+                      overflow-auto no-scrollbar
+                      max-h-[calc(100dvh-var(--header-mobile)-2rem)]
+                      md:max-h-[calc(100dvh-var(--header-desktop)-3rem)]
+
+                      shadow-sm dark:shadow-sm shadow-blue-950 dark:shadow-blue-100
+                      animation-transform delay-400
+                      ${T[B]?"translate-y-0 scale-100 opacity-100":"translate-y-6 md:translate-y-8 scale-95 opacity-0"}`,children:v.jsx("a",{href:q,target:"_blank",rel:"noopener noreferrer",className:"cursor-pointer",children:v.jsx("img",{className:"rounded-xl w-full object-cover object-top",src:A,alt:K})})})]},B)})})})})},Wm=()=>{const O=Nt(["contact"]).contact,T=[{id:"1",name:"github",Icon:Cm,link:"https://github.com/"},{id:"2",name:"linkedin",Icon:Hm,link:"https://www.linkedin.com/"},{id:"3",name:"freeCodeCamp",Icon:Um,link:"https://www.freecodecamp.org/"}];return v.jsx("ul",{className:`icon-card 
       flex justify-center gap-4 mb-0
       animation-colors`,children:T.map((s,_)=>{const{id:D,name:B,Icon:K,link:M}=s;return v.jsx("li",{children:v.jsx("a",{href:M,"aria-label":B,title:B,target:"_blank",rel:"noopener noreferrer",className:`icons
               rounded-lg p-2
@@ -331,7 +338,7 @@ Error generating stack: `+e.message+`
       sections-background
       animation-colors`,children:v.jsx("div",{id:r,className:`contact-container
         flex flex-col
-        w-full max-w-4xl
+        w-full max-w-5xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:v.jsx("div",{className:`contact-cards
@@ -363,7 +370,7 @@ Error generating stack: `+e.message+`
       animation-colors`,children:v.jsx("div",{id:r,className:`test-container
         flex flex-col
         border 
-        w-full max-w-4xl
+        w-full max-w-5xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]`,children:v.jsx("div",{className:`test-cards
