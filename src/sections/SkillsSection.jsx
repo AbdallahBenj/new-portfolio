@@ -28,7 +28,7 @@ const SkillsSection = ({ id }) => {
         id={id}
         className="skills-container
         flex flex-col
-        w-full max-w-4xl
+        w-full max-w-5xl
         p-4 md:p-6
         pt-[calc(var(--header-mobile)+1rem)]
         md:pt-[calc(var(--header-desktop)+1.5rem)]"

@@ -15,7 +15,7 @@ const Footer = () => {
       <div
         className="footer-container
         font-heading text-sm
-        w-full max-w-4xl px-6
+        w-full max-w-5xl px-6
         flex flex-col md:flex-row justify-evenly"
       >
         <p className="text-gray-700 dark:text-gray-300">

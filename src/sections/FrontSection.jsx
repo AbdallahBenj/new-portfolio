@@ -44,7 +44,7 @@ const FrontSection = ({ id }) => {
           id="hero"
           className={`hero-section-card
           flex flex-col md:flex-row-reverse
-          w-full max-w-4xl
+          w-full max-w-5xl
           p-6
           pt-[calc(var(--header-mobile)+1rem)]
           md:pt-[calc(var(--header-desktop)+1.5rem)]

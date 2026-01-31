@@ -39,7 +39,7 @@ const Header = () => {
         className="header-container
         relative z-10
         m-auto px-6
-        flex justify-between items-center w-full max-w-4xl"
+        flex justify-between items-center w-full max-w-5xl"
       >
         {/*Brand Name*/}
         <a href="./" className="brand">
