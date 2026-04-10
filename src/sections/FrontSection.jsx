@@ -87,7 +87,7 @@ const FrontSection = ({ id }) => {
             dark:shadow-black/70
             animation-colors"
           >
-            {/* Avatar profile image */}
+            {/* Avatar Image profile */}
             {/* <img
               src={avatarProfile}
               alt="Profile Avatar"
