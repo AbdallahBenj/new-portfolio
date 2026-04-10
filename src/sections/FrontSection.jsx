@@ -1,4 +1,5 @@
 import { FaUserCircle } from "react-icons/fa";
+import avatarProfile from "@/assets/avatar-profile.webp";
 
 import useScrollSections from "@/hooks/useScrollSections.js";
 import BgFrontSection from "@/components/BgFrontSection.jsx";
@@ -86,6 +87,17 @@ const FrontSection = ({ id }) => {
             dark:shadow-black/70
             animation-colors"
           >
+            {/* Avatar profile image */}
+            {/* <img
+              src={avatarProfile}
+              alt="Profile Avatar"
+              aria-hidden="true"
+              focusable="false"
+              className="
+              relative z-10
+              h-full w-full
+              animation-colors"
+            /> */}
             <FaUserCircle
               aria-hidden="true"
               focusable="false"
