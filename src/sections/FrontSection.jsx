@@ -117,7 +117,7 @@ const FrontSection = ({ id }) => {
           >
             <div
               className={`hello-paragraph
-              animation-transform delay-200 
+              animation-transform delay-300 
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
@@ -172,7 +172,7 @@ const FrontSection = ({ id }) => {
 
             <div
               className={`last-paragraph
-              animation-transform delay-600
+              animation-transform delay-500
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
@@ -198,7 +198,7 @@ const FrontSection = ({ id }) => {
               // type="submit"
               href="#contact"
               aria-label="Go to contact section"
-              className="font-heading
+              className={`font-heading
               w-full
               cursor-pointer
               rounded-lg p-2
@@ -209,7 +209,13 @@ const FrontSection = ({ id }) => {
               dark:bg-sky-500 dark:hover:bg-sky-600
               transition-all duration-300
               shadow-md hover:shadow-lg
-              active:scale-95"
+              active:scale-95
+              animation-transform delay-600
+              ${
+                isSectionVisible
+                  ? "translate-y-0 scale-100 opacity-100"
+                  : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+              }`}
             >
               Contact Me
             </a>

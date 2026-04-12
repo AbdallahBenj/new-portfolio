@@ -60,7 +60,7 @@ const ContactForm = () => {
           font-heading
           font-semibold text-2xl
           text-emerald-500
-          animation-transform delay-100
+          animation-transform delay-100 
           ${result ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"}`}
       >
         {result && <p>{result}</p>}
@@ -86,7 +86,7 @@ const ContactForm = () => {
           bg-gray-200 dark:bg-gray-800
           placeholder:text-gray-500
           text-gray-900 dark:text-gray-100
-          animation-transform delay-200
+          animation-transform delay-200 
 
           ${
             isSectionVisible
@@ -115,7 +115,7 @@ const ContactForm = () => {
           bg-gray-200 dark:bg-gray-800
           placeholder:text-gray-500
           text-gray-900 dark:text-gray-100
-          animation-transform delay-350
+          animation-transform delay-300 
           ${
             isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -144,7 +144,7 @@ const ContactForm = () => {
           bg-gray-200 dark:bg-gray-800
           placeholder:text-gray-500
           text-gray-900 dark:text-gray-100
-          animation-transform delay-500
+          animation-transform delay-400 
           ${
             isSectionVisible
               ? "translate-y-0 scale-100 opacity-100"
@@ -163,26 +163,38 @@ const ContactForm = () => {
           <button
             type="button"
             onClick={handleCancel}
-            className="flex-1 md:flex-1/3
+            className={`flex-1 md:flex-1/3
             cursor-pointer
             rounded-lg p-2
             font-heading
             font-semibold text-lg
             border-2
             text-sky-600 hover:text-gray-100
-            bg-transparent  hover:bg-sky-600"
+            bg-transparent  hover:bg-sky-600
+            animation-transform delay-500
+          ${
+            isSectionVisible
+              ? "translate-y-0 scale-100 opacity-100"
+              : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+          }`}
           >
             Cancel
           </button>
           <button
             type="submit"
-            className="font-heading
+            className={`font-heading
             flex-1 md:flex-2/3
             cursor-pointer
             rounded-lg p-2
             font-semibold text-lg
             text-gray-50 hover:text-gray-100
-            bg-sky-500 hover:bg-sky-600"
+            bg-sky-500 hover:bg-sky-600
+            animation-transform delay-600
+          ${
+            isSectionVisible
+              ? "translate-y-0 scale-100 opacity-100"
+              : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+          }`}
           >
             Submit
           </button>

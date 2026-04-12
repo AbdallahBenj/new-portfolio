@@ -56,15 +56,13 @@ const SocialContact = () => {
               focus-visible:ring-sky-500
               focus-visible:ring-offset-2
               dark:focus-visible:ring-sky-400
-
-              animation-transform
-              
+              animation-transform transform-gpu
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
               }`}
-              style={{ transitionDelay: `${200 + index * 150}ms` }}
+              style={{ transitionDelay: `${200 + index * 100}ms` }}
             >
               <Icon
                 aria-hidden="true"
