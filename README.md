@@ -4,7 +4,7 @@ A modern, fully responsive personal portfolio website built with React and Tailw
 
 ## 🌐 Live Demo
 
-👉 **[View Portfolio](https://abdallahb-dev.vercel.app/)**
+👉 **[View Portfolio](https://abdallahdev.vercel.app/)**
 
 ---
 
