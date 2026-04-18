@@ -16,7 +16,7 @@ const useScrollSections = (sectionsIds = []) => {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(handleScroll, { threshold: 0.2 });
+    const observer = new IntersectionObserver(handleScroll, { threshold: 0.05 });
 
     sectionsIds.forEach((section) => {
       const id = document.getElementById(section);

@@ -167,8 +167,8 @@ const FrontSection = ({ id }) => {
               <h1
                 id="hero-title"
                 className="font-heading font-semibold text-4xl md:text-5xl lg:text-6xl
-                first-letter:text-7xl first-letter:text-sky-900 dark:first-letter:text-sky-500
-              text-gray-700 dark:text-gray-300"
+                first-letter:text-7xl first-letter:text-sky-600 dark:first-letter:text-sky-500
+              text-slate-600 dark:text-gray-300"
               >
                 Abdallah
               </h1>
@@ -216,22 +216,25 @@ const FrontSection = ({ id }) => {
               href="#contact"
               aria-label="Go to contact section"
               className={`font-heading
-              w-full
               cursor-pointer
               rounded-lg p-2
-              text-center
-              font-semibold text-lg
-              text-gray-50 hover:text-gray-100
-              bg-sky-900 hover:bg-sky-950
-              dark:bg-sky-500 dark:hover:bg-sky-600
-              transition-all duration-300
-              shadow-md hover:shadow-lg
-              active:scale-95
-              animation-transform delay-600
+              text-center font-medium text-lg
+              border border-sky-500
+              shadow-lg shadow-sky-500/25
+              
+              text-white hover:text-white
+              bg-sky-500 hover:bg-sky-600 backdrop-blur-xl
+              hover:-translate-y-1 hover:border-sky-500
+              transition duration-300
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
-                  : "translate-y-6 md:translate-y-8 scale-95 opacity-0"
+                  : "translate-y-8 scale-95 opacity-0"
+              }
+              ${
+                isSectionVisible
+                  ? "translate-y-0 scale-100 opacity-100"
+                  : "translate-y-8 scale-95 opacity-0"
               }`}
             >
               Contact Me

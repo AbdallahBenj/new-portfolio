@@ -9,27 +9,28 @@ const SocialContact = () => {
   const socialContent = [
     {
       id: "1",
-      name: "github",
-      Icon: FaGithub,
-      link: "https://github.com/",
+      name: "LinkedIn",
+      Icon: FaLinkedin,
+      link: "https://www.linkedin.com/in/abdallah-benjalal/",
     },
     {
       id: "2",
-      name: "linkedin",
-      Icon: FaLinkedin,
-      link: "https://www.linkedin.com/",
+      name: "GitHub",
+      Icon: FaGithub,
+      link: "https://github.com/AbdallahBenj/",
     },
     {
       id: "3",
       name: "freeCodeCamp",
       Icon: FaFreeCodeCamp,
-      link: "https://www.freecodecamp.org/",
+      link: "https://www.freecodecamp.org/abdallahben/",
     },
   ];
   return (
     <ul
       className="icon-card 
-      flex justify-center gap-4 mb-0
+      max-w-2xl m-auto
+      flex flex-wrap justify-center gap-4
       animation-colors"
     >
       {socialContent.map((icon, index) => {
@@ -42,21 +43,24 @@ const SocialContact = () => {
               title={name}
               target="_blank"
               rel="noopener noreferrer"
-              className={`icons
-              rounded-lg p-2
+              className={`icons group
+              rounded-lg pl-2 pr-3 py-2
 
-              size-10 md:size-12 
-              inline-flex items-center justify-center
-
-              bg-sky-900 hover:bg-sky-950
-              dark:bg-gray-100 hover:dark:bg-gray-300
+              border border-sky-500
+              inline-flex items-center justify-center gap-2
+              bg-gray-200/50 dark:bg-gray-900/50 backdrop-blur-xl
+              shadow-xl shadow-sky-500/15
+              dark:shadow-sm dark:shadow-sky-500/50
+              hover:-translate-y-1
 
               focus:outline-none
               focus-visible:ring-2
               focus-visible:ring-sky-500
               focus-visible:ring-offset-2
               dark:focus-visible:ring-sky-400
-              animation-transform transform-gpu
+              animation-transform
+              
+
               ${
                 isSectionVisible
                   ? "translate-y-0 scale-100 opacity-100"
@@ -64,13 +68,22 @@ const SocialContact = () => {
               }`}
               style={{ transitionDelay: `${200 + index * 100}ms` }}
             >
-              <Icon
-                aria-hidden="true"
-                className="size-9 md:size-10
-                text-gray-100
-                dark:text-sky-950
-                hover:dark:text-sky-950"
-              />
+              <div
+                className="flex h-12 w-12 shrink-0 items-center justify-center
+                rounded-lg bg-sky-500 text-white
+                shadow-lg shadow-sky-500/25
+                transition duration-300 group-hover:scale-105"
+              >
+                <Icon aria-hidden="true" className="size-5 md:size-6" />
+              </div>
+              <div className="min-w-0">
+                <p
+                  className="truncate text-base font-medium
+                  text-slate-900 dark:text-white"
+                >
+                  {name || "social"}
+                </p>
+              </div>
             </a>
           </li>
         );
