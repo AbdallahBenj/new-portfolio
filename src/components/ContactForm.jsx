@@ -98,6 +98,7 @@ const ContactForm = () => {
       </div>
 
       <form
+        ref={form}
         onSubmit={handleSubmit}
         className="form
         space-y-5"
